@@ -1,0 +1,23 @@
+﻿@{
+       Layout = "~/Views/_siteLayout.cshtml";
+     }
+    
+     @{
+     var MovieName="";
+    
+       if(IsPost){
+         MovieName=Request["formName"];
+         
+         var SQLINSERT = "INSERT INTO Movie (Name) VALUES (@0)";
+         var db = Database.Open("com.binbinsoft.product");
+         db.Execute(SQLINSERT, MovieName);
+        Response.Redirect("index.cshtml");
+       }
+    
+     }
+    <h1>Add a New Movie to the Database</h1>
+       <form action="" method="post">
+         <p>Name:<input type="text" name="formName" /></p>
+         <p><input type="submit" value="Add Movie" /></p>
+     </form>
+

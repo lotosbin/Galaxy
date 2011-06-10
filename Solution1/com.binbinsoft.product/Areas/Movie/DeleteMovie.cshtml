@@ -1,0 +1,40 @@
+﻿@{
+       Layout = "~/Views/_siteLayout.cshtml";
+     }
+@{
+   
+  var id=Request["id"];
+   
+  var SQLSELECT = "SELECT * FROM Movie where ID=@0";
+   
+  var db = Database.Open("com.binbinsoft.product");
+   
+  var Movie = db.QuerySingle(SQLSELECT,id);
+   
+  var MovieName=Movie.Name;
+   
+  if(IsPost){
+   
+  var SQLDELETE = "DELETE FROM Movie WHERE ID=@0";
+   
+  db.Execute(SQLDELETE,id);
+   
+  Response.Redirect("index.cshtml");
+   
+  }
+   
+  }
+   
+  <h1>Delete a movie</h1>
+   
+  <p>Are you sure you want to delete the movie <strong>@Movie.Name ?</strong></p>
+   
+  <form action="" method="post">
+   
+  <p><input type="submit" value="Yes"/>
+   
+  <input type="button" value="No" onclick="window.location = 'index.cshtml'" /></p>
+   
+  <br/>
+   
+  </form>

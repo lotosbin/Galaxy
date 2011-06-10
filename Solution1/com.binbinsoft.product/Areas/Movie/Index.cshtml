@@ -1,0 +1,19 @@
+﻿@{
+       Layout = "~/Views/_siteLayout.cshtml";
+     }
+ @{
+       var db= Database.Open("com.binbinsoft.product");
+       var sqlQ = "SELECT * FROM Movie";
+       var data = db.Query(sqlQ);
+     }    
+  <div id="movieslist">
+    <ol>
+        
+      @foreach(var row in data)
+       {
+         <li><a href="EditMovie.cshtml?id=@row.id"><span>@row.Id:</span>@row.Name</a><a href="DeleteMovie.cshtml?id=@row.id">Delete</a></li>
+       }
+    </ol>
+    <a href="AddMovie.cshtml">Add a new movie</a>
+  </div>
+   

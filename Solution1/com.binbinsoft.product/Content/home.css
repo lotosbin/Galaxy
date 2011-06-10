@@ -1,0 +1,77 @@
+body { 
+   margin:0; 
+   padding:0; 
+   background:white; 
+   font-family: Tahoma; 
+   font-size:14px; 
+}
+    
+#page { 
+   width:1000px;
+   background:white; 
+   margin:auto;
+   padding:0;
+}
+
+header { 
+   height:100px;
+   width:960px;
+   padding:20px;
+   display: block;
+   width:100%; 
+}
+    
+nav { 
+   float:left; 
+   width:210px; 
+   margin:20px;
+   border:1px solid black; 
+   display:block;
+}
+    
+nav ul { 
+   list-style:none; 
+   list-style-type:none; 
+   margin:0; 
+   padding:0; 
+   font-size:1.6em; 
+   font-weight:bold; 
+} 
+        
+nav ul li { margin:5px;  }
+
+#posts {
+   width:700px; 
+   margin:20px 10px 10px 260px; 
+}
+
+footer { 
+   font-size:0.8em;
+   text-align:center; 
+   margin-top:10px; 
+   display:block;
+   width:100%; 
+}
+
+h1 { 
+    font-size: 3.5em;
+    margin-top: 10px; 
+    text-align: center;
+}
+
+h2 { font-size: 2.0em; margin:0; }
+h3 { font-size: 1.4em; margin:0; }
+
+p { 
+    font-size: 1.0em;
+    padding: 10px;
+}
+
+.image { text-align: center; }
+
+hgroup { text-align: center;}
+
+#post {
+   border-bottom: 1px dashed black; 
+   margin-bottom: 20px;  
+}

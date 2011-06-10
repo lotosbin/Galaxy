@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbHelper", "..\DbHelper\DbHelper.csproj", "{4A56FDEF-76E4-40D8-8448-CFA1AEC6A385}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.binbinsoft.www", "com.binbinsoft.www\com.binbinsoft.www.csproj", "{BF0E13B6-EF6B-44C4-8AF0-43E222CE02FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.binbinsoft.www.Tests", "com.binbinsoft.www.Tests\com.binbinsoft.www.Tests.csproj", "{C1910216-43EE-4229-8F97-3A3D85F4DE60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{4A56FDEF-76E4-40D8-8448-CFA1AEC6A385}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A56FDEF-76E4-40D8-8448-CFA1AEC6A385}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A56FDEF-76E4-40D8-8448-CFA1AEC6A385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF0E13B6-EF6B-44C4-8AF0-43E222CE02FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0E13B6-EF6B-44C4-8AF0-43E222CE02FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0E13B6-EF6B-44C4-8AF0-43E222CE02FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0E13B6-EF6B-44C4-8AF0-43E222CE02FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1910216-43EE-4229-8F97-3A3D85F4DE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1910216-43EE-4229-8F97-3A3D85F4DE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1910216-43EE-4229-8F97-3A3D85F4DE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1910216-43EE-4229-8F97-3A3D85F4DE60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

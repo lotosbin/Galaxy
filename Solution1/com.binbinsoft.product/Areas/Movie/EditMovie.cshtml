@@ -1,0 +1,27 @@
+﻿@{
+       Layout = "~/Views/_siteLayout.cshtml";
+     }
+    @{
+         var id=Request["id"];
+         var SQLSELECT = "SELECT * FROM Movie where ID=@0";
+         var db = Database.Open("com.binbinsoft.product");
+         var Movie = db.QuerySingle(SQLSELECT,id);
+         var MovieName=Movie.Name;
+         
+      
+        if(IsPost){
+          MovieName=Request["formName"];
+         
+          var SQLUPDATE = "UPDATE Movie Set Name=@0 WHERE id=@1";
+          db.Execute(SQLUPDATE, MovieName,id);
+          Response.Redirect("index.cshtml");
+        }
+    }
+     
+    <h1>Edit a Movie</h1>
+      <form action="" method="post">
+        <p>Name:<input type="text" name="formName" value="@MovieName" /></p>
+        
+        <p><input type="submit" value="Edit Movie" /></p>
+      </form>
+
